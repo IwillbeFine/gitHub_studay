@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;list-style: none;
+        }
+        body{
+            background-color: #F5F5F5;
+        }
+        .wrap{
+            width: 1300px;
+            height: 650px;
+            /* box-shadow: 0 0 0 1px red; */
+            position: absolute;
+            left: 0;top: 0;bottom: 0;right: 0;margin: auto;
+            display: flex;
+        }
+        .wrap a:hover img{
+            box-shadow: 0 0  15px 1px rgba(0, 0, 0, 0.503);
+        }
+        .wrap ul{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            justify-content: space-around;
+        }
+        .wrap ul li{
+            width: 240px;
+            height: 280px;
+            padding: 20px 0;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            transition: .3s;
+        }
+        .wrap ul li:hover{
+            transform:translateY(-5px);
+            box-shadow: 0 0  15px 1px rgba(0, 0, 0, 0.503);
+        }
+        .wrap ul li img{
+            width: 160px;
+            height: 160px;
+        }
+        .wrap ul li p{
+            width: 100px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        span{
+            font-size: 12px;
+            width: 180px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            color: #D2D2D2;
+        }
+        span.price{
+            width: 180px;
+            height: 20px;
+            font-size: 14px;
+            color: red;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <a href="#"><img src="../img/1.webp" alt="" height="100%"></a>
+        <ul>
+            <li>
+                <img src="../img/2.webp" alt="">
+                <p>小米11</p>
+                <span>骁龙888|2k四曲面屏</span>
+                <span class="price">3999元起</span>
+            </li>
+            <li>
+                <img src="../img/3.webp" alt="">
+                <p>小米11</p>
+                <span>骁龙888|2k四曲面屏</span>
+                <span class="price">3999元起</span>
+            </li>
+            <li>
+                <img src="../img/4.webp" alt="">
+                <p>小米11</p>
+                <span>骁龙888|2k四曲面屏</span>
+                <span class="price">3999元起</span>
+            </li>
+            <li>
+                <img src="../img/5.webp" alt="">
+                <p>小米11</p>
+                <span>骁龙888|2k四曲面屏</span>
+                <span class="price">3999元起</span>
+            </li>
+            <li>
+                <img src="../img/6.webp" alt="">
+                <p>小米11</p>
+                <span>骁龙888|2k四曲面屏</span>
+                <span class="price">3999元起</span>
+            </li>
+            <li>
+                <img src="../img/7.webp" alt="">
+                <p>小米11</p>
+                <span>骁龙888|2k四曲面屏</span>
+                <span class="price">3999元起</span>
+            </li>
+            <li>
+                <img src="../img/8.webp" alt="">
+                <p>小米11</p>
+                <span>骁龙888|2k四曲面屏</span>
+                <span class="price">3999元起</span>
+            </li>
+            <li>
+                <img src="../img/9.webp" alt="">
+                <p>小米11</p>
+                <span>骁龙888|2k四曲面屏</span>
+                <span class="price">3999元起</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

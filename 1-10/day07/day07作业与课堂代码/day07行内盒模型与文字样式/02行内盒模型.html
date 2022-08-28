@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hangnei</title>
+    <style>
+        /* 
+        行内元素不支持上下的padding 但是背景会延伸出去，
+        并不会改变元素的位置，左右padding会改变行内盒模型的大小和位置
+        */
+        div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+        }
+        span{
+            /*行内元素的特征*/
+            /*行内元素的大小由内容决定,不支持宽度高度的设置*/
+            /*height: 500px;对行内元素不会生效*/
+
+            /*
+            行内元素的border不支持上下的border，
+            只支持左右的border
+            */
+            
+            /*
+            border: 5px solid greenyellow; 这里上面的边框会超出盒子的边框，建议不这样用
+            */
+            border-left: 5px solid blue;
+            border-right: 5px solid blue;
+            /* background: red; */
+            font-size: 15px;
+            /* padding-top: 15px; */
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 行内盒模型 -->
+    <div>
+        <span>今天的今天的</span>
+    </div>
+</body>
+</html>

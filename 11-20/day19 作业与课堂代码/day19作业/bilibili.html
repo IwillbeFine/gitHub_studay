@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #EEEEEE;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        div{
+            /* overflow: hidden; */
+            width: 120px;
+            height:180px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            margin: 100px 100px;
+        }
+        div ul li{
+            overflow: hidden;
+            width: 100%;
+            height: 30px;
+            transition: background 0.3s;
+            /* 鼠标样式 */
+            cursor: pointer;
+        }
+        div ul li span{
+            float: left;
+            font-size: 12px;
+            height: 30px;
+            line-height: 30px;
+        }
+        div ul li i{
+            float: left;
+            width: 10px;
+            height: 100%;
+        }
+        div ul li .start{
+            margin-left:15px;
+            background: url('./img/13-1.png') 0 88px;
+            transition: margin-left 0.3s;
+        }
+        div ul li:hover .start{
+            margin-left: 20px;
+        }
+        div ul li:hover{
+            background-color:#E5E9EF;
+        }
+        div ul li .stop{
+            margin-left: 80px;
+            background: url('./img/13-1.png') 0 125px;
+            transition: margin .3s;
+        }
+        div ul li:hover .stop{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <i class="start"></i>
+                <span>连载动画</span>
+                <i class="stop"></i>
+            </li>
+            <li>
+                <i class="start"></i>
+                <span>完结动画</span>
+                <i class="stop"></i>
+            </li>
+            <li>
+                <i class="start"></i>
+                <span>资讯</span>
+                <i class="stop"></i>
+            </li>
+            <li>
+                <i class="start"></i>
+                <span>官方延伸</span>
+                <i class="stop"></i>
+            </li>
+            <li>
+                <i class="start"></i>
+                <span>新番时间表</span>
+                <i class="stop"></i>
+            </li>
+            <li>
+                <i class="start"></i>
+                <span>番剧索引</span>
+                <i class="stop"></i>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

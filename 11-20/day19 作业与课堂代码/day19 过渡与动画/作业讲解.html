@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息">
+    <meta name="description" content="描述信息">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .box{
+            width: 1000px;
+            height: 400px;
+            position: absolute;
+            /* box-shadow: 0 0 0 1px red; */
+            bottom: 0;
+            left: 0;right: 0;top: 0;margin: auto;
+        }
+        .box li{
+            /* width: 100px; */
+            position: relative;
+            height: 100%;
+            float: left;
+            /* box-shadow: 0 0 0 1px blue; */
+        }
+        .box li input{
+            height: 100%;
+            transition: .3s;
+            /* opcity 小于1 的时候层级比定位元素更高, 等于1的时候层级会降低 */
+            opacity: 0;
+            width: 100px;
+        }
+        .box li div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            line-height: 400px;
+            color: chartreuse;
+            font-size: 22px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.397);
+            height: 100%;
+            width: 100px;
+        }
+        .box li .bg{
+            /* background: red; */
+            opacity: 1;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            filter: blur(5px);
+            height: 100%;
+            z-index: -2;
+        }
+        /* 改变自身的宽度 */
+        .box li input:checked{
+            width: 700px;
+        }
+        /* 改变他相邻的 .bg元素 */
+        .box li input:checked + .bg{
+            z-index: -1;
+        }
+        .box li.list1{
+            background: url(./img/66.jpg) no-repeat center/cover;
+        }
+        .box li.list1 .bg{
+            background: url(./img/66.jpg) no-repeat center/cover;
+        }                         
+        .box li.list2{
+            background: url(./img/1.jpg) no-repeat center/cover;
+        }
+        .box li.list2 .bg{
+            background: url(./img/1.jpg) no-repeat center/cover;
+        }
+        .box li.list3{
+            background: url(./img/2.jpg) no-repeat center/cover;
+        }
+        .box li.list3 .bg{
+            background: url(./img/2.jpg) no-repeat center/cover;
+        }
+        .box li.list4{
+            background: url(./img/3.jpg) no-repeat center/cover;
+        }
+        .box li.list4 .bg{
+            background: url(./img/3.jpg) no-repeat center/cover;
+        } 
+    </style>
+</head>
+<body>
+    <!-- input[type="text"] + div -->
+    <ul class="box">
+        <li class="list1">
+            <div>一</div>
+            <!-- input + div -->
+            <input type="radio" checked name="ss" id="">
+            <div class="bg"></div>
+        </li>
+        <li class="list2">
+            <div>二</div>
+            <input type="radio" name="ss" id="">
+            <div class="bg"></div>
+        </li>
+        <li class="list3">
+            <div>三</div>
+            <input type="radio" name="ss" id="">
+            <div class="bg"></div>
+        </li>
+        <li class="list4">
+            <div>四</div>
+            <input type="radio" name="ss" id="">
+            <div class="bg"></div>
+        </li>
+    </ul>
+
+</body>
+</html>

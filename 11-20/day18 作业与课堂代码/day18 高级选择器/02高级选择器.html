@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /* 相邻选择器
+        选择该元素的相邻的同级元素
+         */
+        /* p + p{
+            color: cornflowerblue;
+        } */
+
+        /* span + p{
+            color: green;
+        } */
+        /* 弟弟选择器 ~
+        选择元素后满足条件的同级元素
+        */
+        /* p ~ span{
+            color: green;
+        } */
+        p + span{
+            color: green;
+        }
+
+        /* 属性选择器 
+        选择元素中属性满足条件的元素
+        ^ 以什么开始
+        $ 以什么结束
+        * 包含什么
+        */
+        input[type] + input {
+            background: red;
+        }
+        .list p~p{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>小丑</p>
+        <span type="butt">阿伟</span>
+        <p>陈卓</p>
+        <span>杨海</span>
+        <p>李旗</p>
+    </div>
+    <form action="">
+        <input type="button" name="abb"  value="按钮"> 1<br>
+        <input type="file" name="aa" id="">2<br>
+        <input type="text">3<br>
+        <textarea name="baa" id="" cols="30" rows="10">4</textarea>
+    </form>
+    <div class="list">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+    </div>
+</body>
+</html>

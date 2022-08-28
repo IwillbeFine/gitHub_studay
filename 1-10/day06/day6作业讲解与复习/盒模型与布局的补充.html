@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            /* padding: 20px; */
+            height: 200px;
+            font-size: 300px;
+            background: red;
+            border: 20px solid blue;
+            /* border-right: 20px solid yellow; */
+            /* 开启怪异盒模型 盒子的大小不发生改变*/
+            box-sizing: border-box;
+            margin-left: 100px;
+            /* border: 1px solid black; */
+            padding-top: 1px ;
+        }
+        .sun{
+            /* width: auto; */
+            /* height: 100%; */
+            width: 50px;
+            height: 50px;
+            /* margin-left: auto;
+            margin-right: 20px; */
+            background: skyblue;
+            margin-top: 100px;
+            /* border: 20px solid teal; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        1234
+        <div class="sun">
+            
+        </div>
+    </div>
+    <!-- 
+        盒模型的组成部分
+        内容区域 content
+        内填充区域 padding
+        边框区域 border
+        外边距区域 margin
+     -->
+    <!-- 
+        内容区域
+        写法： width/height
+        值选择：px % em/rem vh vw cm m auto
+        作用：设置盒子内容区域的大小
+        内容区域的特征：在没有设置宽度高度的时候，默认宽度为auto，默认高度内容撑开高度
+     -->
+     <!-- 
+         内填充区域 padding
+         写法：padding：复合写法/padding-left单例
+         值的选择：px %（参照父级） em/rem
+         作用：设置内容区域与边框之间的距离
+         特点：会撑大元素盒子的大小
+      -->
+      <!-- 
+          边框区域 border
+          写法；border：复合写法
+                border-right：单例四个方向都能设置
+                border-width：拆分四个方向单独设置
+        作用：设置盒子最外层的边框
+        特点：会撑大盒子的大小
+       -->
+       <!-- 
+           外边距区域
+           写法 margin：/margin-right
+           作用：调整盒子的位置/用于页面布局
+           默认情况下，元素是从左到右从上到下的排布，
+           所以margin的left和top会改变自身的位置，
+           right和bottom会改变相邻元素的位置
+        -->
+
+        <!-- 怪异盒模型
+        写法：box-sizing：border-box写在你需要他成为怪异盒模型的盒子
+        特点：盒子的大小不会发生改变，
+        添加border和padding 的时候会缩小内容区域保证盒子的大小不变，
+        里面的元素也影响不到盒子的大小
+     -->
+
+        <!-- 盒模型是用于布局，那么怎么布局
+        水平布局：
+            1.靠左右margin左右padding以及width和border
+            2.水平布局必须满足一个等式
+                所有的值加起来必须等于父元素的内容区域大小
+                默认margin-right：auto
+            3.7个值如果有auto就自动计算auto这个值，使等式成立
+                7个值里面只有width 和margin左右支持auto
+
+        垂直布局：
+        父子级的垂直
+            相邻外边距传递，对页面布局非常不利
+            解决方法：1.让他不相邻,给父级加border
+                2.给父级加padding
+                3.开启一个bfc容器
+                >overfolow absolute
+        兄弟元素的垂直
+        -->
+    
+</body>
+</html>

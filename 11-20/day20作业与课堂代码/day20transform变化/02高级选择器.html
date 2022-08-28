@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /* nth-child 选择满足条件的第一个元素
+        先去找到元素中的第几个,再去判断是不是p 标签
+         */
+        div p:nth-child(1){
+            background: red;
+        }
+        /* p:nth-of-type
+        先判断是不是p标签 选择后面的条件 */
+        div p:nth-of-type(1){
+            background: blue;
+        }
+        /* 
+        even 偶数
+        old 奇数
+         */
+        div p:nth-of-type(-n+4){
+            background: yellow;
+        }
+        div p:nth-of-type(n +6){
+            background: red;
+        }
+        /* 选择第一个 */
+        div p:first-child{
+            background: red;
+        }
+        /* 选择到最后一个元素 */
+        div p:last-of-type{
+            background-color: blue;
+        }
+        form{
+            width: 200px;
+            height: 200px;
+            background: brown;
+        }
+        /*
+        focus-within 当表单里的元素发生聚焦时,自身发生变化  
+        */
+        form:focus-within{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>00000000000001</p>
+        <p>00000000000002</p>
+        <p>00000000000003</p>
+        <p>00000000000004</p>
+        <p>00000000000005</p>
+        <p>00000000000006</p>
+        <p>00000000000007</p>
+        <p>00000000000008</p>
+        <p>00000000000009</p>
+    </div>
+    <form action="">
+        <input type="text">
+    </form>
+</body>
+</html>

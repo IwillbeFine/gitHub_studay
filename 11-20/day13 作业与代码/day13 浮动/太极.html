@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taiji</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            /* color: transparent; */
+            box-shadow: 0 0 0 3px blue;
+        }
+        /* 太极 */
+        .box1{
+            box-shadow:  none;
+            border-radius: 50%;
+            background: 
+            radial-gradient(
+                25% 25% at 50% 25%,
+                white 25%,
+                black 25%,
+                black 100%,
+                transparent
+            ),
+            radial-gradient(
+                25% 25% at 50% 75%,
+                black 25%,
+                white 25%,
+                white 100%,
+                transparent
+            ),
+            linear-gradient(
+                to right,
+                black 50%,
+                white 50%
+            )
+            ;
+        }
+        /* 彩虹 */
+        .box2{
+            box-shadow: none;;
+            background: 
+            radial-gradient(
+                63% 40% at center bottom,
+                transparent 0%,
+                transparent 10%,
+                yellow 10%,
+                yellow 20%,
+                black 20%,
+                black 30%,
+                red 30%,
+                red 40%,
+                green 40%,
+                green 50%,
+                blue 50%,
+                blue 60%,
+                orange 60%,
+                orange 70%,
+                skyblue 70% ,
+                skyblue 80% ,
+                transparent 80%
+            ),
+            url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3511544063,4112539952&fm=26&gp=0.jpg) no-repeat center/cover;
+        }
+        /* 棋盘 */
+        .box3{
+            box-shadow: none;
+            background: 
+            linear-gradient(
+                to right top,
+                black 26%,
+                transparent 26%
+            ) ,
+            linear-gradient(
+                to left top,
+                black 26%,
+                transparent 26%
+            ) 0 -100px,
+            linear-gradient(
+                to left bottom,
+                black 26%,
+                transparent 26%
+            ) 100px 100px,
+            linear-gradient(
+                to right bottom,
+                black 26%,
+                transparent 26%
+            ) 99px 0px
+            ;
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 太极 -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
+
+

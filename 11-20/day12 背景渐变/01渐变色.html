@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background-color: yellow;
+            border: 3px solid skyblue;
+            /* color: transparent; */
+
+            /* 线性渐变 background:linear-gradient(to 加渐变方向，color1 范围,color2 范围) 颜色可以有多个 不要局限自己的思维 */
+
+            background: linear-gradient(to right, blue 33%, red 33%, red 66%, green 66%,green 99%);
+
+            /* 径向渐变 radial-gradient()
+            radial-gradient(圆的x轴半径 圆的y轴半径 at 圆心x轴位置 圆心y轴位置,color1 范围,color2 范围)
+            */
+
+            /* background: radial-gradient( 100px 100px at center, red 0 ,red 30%,blue 30% , blue 80%, yellow 80%, transparent); */
+
+            /* 重复线性渐变 */
+            /* background: repeating-linear-gradient(to right, red 0px, red 20px, blue 20px, blue 40px, yellow 40px, yellow 60px); */
+
+            /* 重复径向渐变 */
+            /* background: repeating-radial-gradient(black 0px, black 20px, white 20px, white 40px); */
+
+            /* background: linear-gradient(red 20px, blue 20px, blue 40px) 0 0/22px 40px; */
+
+            /* background:
+            radial-gradient(black 0%, black 70%, transparent 70%,transparent 100%) no-repeat 110px 110px/55px 55px,
+
+            radial-gradient( white 0%, white 70%,transparent 70% , transparent 100%) no-repeat 98px 103px/65px 65px,yellow; */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

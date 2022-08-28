@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-bottom: 20px;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            /* background-color: black; */
+            box-shadow: 0 0 0 4px red;
+            /* border-radius: 50%; */
+            background:
+                radial-gradient(
+                50% 50% at 50% 25%,
+                white 12.5%,
+                black 12.5%,
+                black 50%,
+                transparent 50%),
+                radial-gradient(
+                50% 50% at 50% 75%,
+                black 12.5%,
+                white 12.5%,
+                white 50%,
+                transparent 50%),
+                linear-gradient( 
+                to right,
+                black 50%,
+                white 50%);
+        }
+
+        .box2 {
+            width: 300px;
+            height: 200px;
+            background:
+                radial-gradient(
+                    ellipse 150px 100px at bottom,
+                    transparent 30%,
+                    yellow 30%,
+                    yellow 40%,
+                    black 40%,
+                    black 50%,
+                    red 50%,
+                    red 60%,
+                    green 60%, 
+                    green 70%, 
+                    blue 70%, 
+                    blue 80%, 
+                    orange 80%, 
+                    orange 90%,
+                    skyblue 90%, 
+                    skyblue 99%,
+                    transparent);
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background:
+                linear-gradient(
+                to top right,
+                black 25%,
+                transparent 25%)
+                0px 0px/40px 40px,
+
+                linear-gradient(
+                    to top right,
+                    black 25%, 
+                    transparent 25%)
+                    100px -100px/40px 40px,
+
+                linear-gradient(
+                    to top right, 
+                    transparent 75%, 
+                    black 75%) 
+                    0px -0px/40px 40px, 
+
+                linear-gradient(
+                    to top right, 
+                    transparent 75%,
+                    black 75%) 
+                    -100px 100px/40px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

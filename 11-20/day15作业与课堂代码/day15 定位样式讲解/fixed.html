@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* 开启固定定位 
+            固定定位也是一种绝对定位,跟绝对定位的特性一模一样,但是他永远都是参照与html  不会沾满一整行
+            */
+            /* position: fixed; */
+            /* 
+            粘滞定位
+            粘滞定位的特性跟相对定位基本一致,不会脱离文档流, 但是可以让元素达到某个位置的时候将其固定
+            相当于是relative 和fixed 的一个结合
+            会沾满一整行
+            */
+            /* position: sticky; */
+            width: 200px;
+            height: 200px;
+            /* top: 10%; */
+            /* left:100% ; */
+            position: static;
+            background: red;
+            /* 用于设置定位元素的层级默认是0
+            z-index 的值越大层级越高
+             */
+            
+        }
+        .list1{
+            z-index: -9999999999999999;
+        }
+        .list2{
+            z-index: 2;
+            margin-top: 30px;
+            background-color: yellow;
+        }
+        .list3{
+            margin-top: 60px;
+            z-index: 3;
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="list1">1</div>
+    <div class="list2">2</div>
+    <div class="list3">3</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        table{
+            width: 600px;
+            border-collapse:collapse;
+            border: 1px solid white;
+        }
+        table tr{
+            height: 38px;
+        }
+        
+        table tbody .list{
+            height: 73px;
+        }
+        table tbody tr:nth-of-type(odd){
+            background: #e6eaf2;
+        }
+        table tbody tr:nth-of-type(even){
+            background: #c9d2e4;  
+        }
+        table thead .title{
+            text-align: center;
+            height: 52px;
+            background: #4576b4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <!-- 行 -->
+        <thead>
+            <tr class="title">
+                <!-- 列 -->
+                <td colspan="2">《课程一》静态网站开发</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">第一章</td>
+                <td>《基础班》开学典礼</td>
+            </tr>
+            <tr class="list">
+                <!-- 列 -->
+                <td colspan="2">(互联网概述|什么是网站|什么是网页I构成网页的元素|网站制作流程详解|怎么样才能学好拿高薪|WEB前端开发职业的前途| WEB前端开发课程目标及)</td>
+            </tr>
+            <tr>
+                <td align="center">第二章</td>
+                <td>HTML常用标签+背景</td>
+            </tr>
+            <tr>
+                <!-- 列 -->
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td align="center">第三章</td>
+                <td>元素选择符+背景</td>
+            </tr>
+            <tr>
+                <!-- 列 -->
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td align="center" rowspan="3">第四章</td>
+                <td>css样式(Font+Text) +特殊符号</td>
+            </tr>
+            <tr>
+                <td>特殊符号</td>
+            </tr>
+            <tr>
+                <td>(Font+Text)</td>
+            </tr>
+            <tr>
+                <!-- 列 -->
+                <td colspan="2"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

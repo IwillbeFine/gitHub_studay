@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}li{list-style: none;}
+        body,html{
+            width: 100%;
+            height: 100%;
+            background: url("./img/5be1256e79844.jpg") no-repeat center/cover;
+            /*
+            background-attachment: fixed; 背景图片附着属性
+            可选值:scroll 默认值背景图片跟随滚动
+                fixed 背景图片附着定位参照于body
+                local 背景图片附着在文字上，跟随文字滚动
+            */
+            background-attachment: fixed;
+
+        }
+        div{
+            height: 200px;
+            margin: 30px 0;
+            /* 设置透明度的第三种方法
+            opacity： 0-1 之间
+            作用设置元素整体透明度，包含里面的所有子元素
+             */
+            opacity: 0.5;
+            background-color: skyblue;
+        }
+        .bg{
+            background: url("./img/5be1256e79844.jpg")no-repeat left top/cover;
+            opacity: 0.5;
+            background-attachment: fixed;
+            width: 200px;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

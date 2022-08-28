@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        body{
+            padding: 10px 15px;
+            background-color: #ccc;
+        }
+        header{
+            width: 100%;
+            height: 114px;
+            border-radius: 20px;
+            background-color: rgb(218, 219, 127);
+        }
+        main{
+            display: flex;
+            width: 100%;
+            height: 800px;
+            flex-direction: row;
+            margin-top: 10px;
+            /* background-color: cadetblue; */
+        }
+        main nav,main article,main aside{
+            border-radius: 20px;
+        }
+        nav{
+            /* flex: 1 1 20%; */
+            /* 
+            flex-grow:成长系数 默认为0
+            flex-shrink:收缩系数 默认为1
+            flex-basis:
+                基础大小 默认值 auto
+                元素的最小宽度/高度
+                决定他为宽度和高度的是主轴的方向
+             */
+            flex-grow: 1;
+            /* width: 20%; */
+            flex-shrink: 1;
+            flex-basis:initial;
+            flex: 1 1 20%;
+            background-color: rgb(91, 91, 190);
+        }
+        article{
+            /* flex: 1 1 60%; */
+            /* width: 10%; */
+            /* flex-basis: 60%;
+            flex-shrink: 1;
+            flex-grow: 1; */
+            flex:1 1 60% ;
+            margin: 0 10px;
+            background-color: rgb(91, 190, 129);
+        }
+        aside{
+            /* width: 20%; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+            /* flex: 1 1 20%; */
+            /* flex-basis: 20%; */
+            flex: 1 1 20%;
+            background-color: rgb(136, 190, 91);
+        }
+        footer{
+            width: 100%;
+            height: 114px;
+            border-radius: 20px;
+            margin-top: 10px;
+            background-color: rgb(127, 219, 155);
+        }
+        @media screen and (max-width: 640px){
+            main{
+                flex-direction: column;
+            }
+            article{
+                margin:0 0 10px;
+            }
+            main nav,main aside,header,footer{
+                order: 1;
+                margin-bottom: 10px;
+                max-height: 60px;
+            }
+            footer{
+                margin-top: 0px;
+                /* max-height: 60px;2 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <nav>nav</nav>
+        <article>article</article>
+        <aside>aside</aside>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>

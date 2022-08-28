@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .box{
+            width:200px;
+            height: 200px;
+            margin: 100px auto;
+            perspective: 1200px;
+        }
+        ul{
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transform: rotateX(-20deg) rotateY(20deg);
+            transition: 1s;
+        }
+        ul:hover{
+            transform:rotateX(-360deg) rotateY(360deg);
+        }
+        li{
+            opacity: 0;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        div li:nth-child(1){
+            opacity: 0;
+            transform: rotateX(0deg) translateZ(100px);
+        }
+        div li:nth-child(2){
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        div li:nth-child(3){
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+        div li:nth-child(4){
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+        div li:nth-child(5){
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        div li:nth-child(6){
+            transform: rotateY(0deg) translateZ(-100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li style="background: yellow;"></li>
+            <li style="background: orangered;"></li>
+            <li style="background: orchid;"></li>
+            <li style="background: purple;"></li>
+            <li style="background: palegreen;"></li>
+            <li style="background: peru;"></li>
+        </ul>
+    </div>
+</body>
+</html>

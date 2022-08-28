@@ -1,0 +1,63 @@
+/* 左边菜单导航 */
+a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+}
+.container{
+    height: 70px;
+    background-color: rgb(36,36,36);
+}
+.container .contain{
+    width: 1077px;
+    height: 100%;
+    margin: auto;
+}
+.container .contain ul .logo{
+    padding: 0;
+    height: 70px;
+    width: 160px;
+    /* background-color: yellow; */
+    background: url(../img/topbar.png);
+}
+.container .contain ul .logo:hover{
+    background: url(../img/topbar.png);
+}
+.container .contain ul li{
+    list-style: none;
+    float: left;
+    color: #ccc;
+    padding: 20px;
+    line-height: 29px;
+}
+.container .contain ul li:hover{
+    background-color: black;
+    color: white;
+}
+
+/* 登录菜单导航 */
+.container .contain .login-box{
+    float: right;
+    color: #ccc;
+    text-decoration: none;
+}
+.container .contain .login-box .author{
+    padding: 5px 15px;
+    border: 1px solid  #ccc;
+    float: left;
+    border-radius: 30px;
+    margin: 20px 20px auto auto;
+}
+.container .contain .login-box .login{
+    float: left;
+    text-align: center;
+    line-height: 70px;
+}
+.container .contain .login-box .login:hover{
+    color: white;
+}
+
+.container .contain .login-box .author:hover{
+    border: 1px solid white;
+    color: white;
+}

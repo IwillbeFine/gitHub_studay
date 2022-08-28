@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- body 区域的复习
+        内容展示的标签
+            行内元素：strong/b em/i a img br
+            块元素：h1-h6 p hr
+        img图片标签
+            属性：
+            src：图片的路径
+                网络路径
+                相对路径
+                绝对路径
+            alt：图片无法展示的时候显示的文字
+            title：鼠标悬停的时候显示文字
+            width：宽度
+            height：高度
+        a超链接标签
+            属性：
+            href：网页的路径/锚点的name值或者是id值
+            target：跳转的方式
+                _self 当前页面跳转
+                _blank 新页面跳转
+            阻止a标签的跳转和刷新
+            第一个方法是加 #
+            javascript:;
+            a标签里面不能再有a标签
+     -->
+    <!-- <a href="javascript:;">哈哈哈</a> -->
+    <!-- p 标签里面不能存放任何的块级元素
+        浏览器会自动帮我们补全代码
+        多个空格会被解析成为一个空格
+        <p>路遥老师</p>
+        <h1>很帅</h1>
+        <p>，哈哈哈</p>
+     -->
+    <!-- 
+         网页的实体字符
+         &nbsp 空格的实体字符
+         &gt 大于符号
+         &lt 小于符号
+      -->
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp陈奕迅（Eason Chan），1974年7月27日出生于中国香港，祖籍广东省东莞市， [1] 华语流行乐男歌手、演员、作曲人，毕业于英国金斯顿大学。</p>
+    <p>a&ltb&gtc</p>
+
+    <!-- 列表标签
+        用途：用于展示一片内容相仿 结构相似 布局相同的区域
+
+        有顺序的列表 ol标签里面只能存放li标签
+        ul ol 里面只能存放li标签
+        li标签里面可以存放任意标签
+            ol li
+        无排序的列表
+        ul li
+     -->
+     <!-- 有序列表 -->
+    <ol>
+        <li>谈莉娜 <b>哈哈哈</b>未等到的东西会等到嘛</li>
+        <li>山东发现首例新冠变异毒株感染确诊患者</li>
+        <li>武汉2020年暖心大片</li>
+    </ol>
+    <!-- 无序列表 -->
+    <ul>
+        <li>谈莉娜<b>哈哈哈</b>未等到的东西会等到嘛</li>
+        <li>山东发现首例新冠变异毒株感染确诊患者</li>
+        <li>武汉2020年暖心大片
+            <ol>
+                <li>谈莉娜 <b>哈哈哈</b>未等到的东西会等到嘛</li>
+                <li>山东发现首例新冠变异毒株感染确诊患者</li>
+                <li>武汉2020年暖心大片</li>
+            </ol>
+        </li>
+    </ul>
+    <a href="https://s.weibo.com/top/summary?cate=socialevent">
+    </a>
+    <!-- 自定义列表  -->
+    <dl>
+        <dt>路遥老师喜欢啥</dt>
+        <dd>唱</dd>
+        <dd>跳</dd>
+        <dd>rao</dd>
+        <dd>篮球</dd>
+        <dt>小丑同学喜欢吃啥</dt>
+        <dd>奥力给</dd>
+    </dl>
+</body>
+
+</html>

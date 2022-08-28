@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 300px auto 0;
+            perspective: 800px;
+        }
+        .wrap{
+            width: 200px;
+            height: 200px;
+            /* box-shadow:0 0 0 1px blue ; */
+            transform-style: preserve-3d;
+            transition: 1s;
+            transform: rotateX(-30deg) rotateY(20deg);
+        }
+        .wrap:hover{
+            transform: rotateX(-30deg) rotateY(360deg);
+        }
+        .wrap li{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+        /* 上边 */
+        .wrap li:nth-child(1){
+            background-color: rgb(255, 121, 121);
+            transform-origin: bottom center;
+            transition: 1s;
+            transform: translateZ(-99px) translateY(-200px) rotateX(-90deg);
+        }
+        .wrap:hover li:nth-child(1){
+            transform: translateZ(-99px) translateY(-200px) rotateX(0deg);
+        }
+        /* 下 */
+        .wrap li:nth-child(2){
+            background-color: rgb(255, 219, 121);
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+        /* 左 */
+        .wrap li:nth-child(3){
+            background-color: rgb(121, 255, 248);
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+        /* 右边 */
+        .wrap li:nth-child(4){
+            background-color: rgb(143, 255, 121);
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        /* 前 */
+        .wrap li:nth-child(5){
+            background-color: rgb(244, 121, 255);
+            transform: rotateY(0deg) translateZ(100px);
+        }
+        /* 后 */
+        .wrap li:nth-child(6){
+            background-color: rgb(123, 121, 255);
+            transform: rotateY(0deg) translateZ(-100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul class="wrap">
+            <li>上</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

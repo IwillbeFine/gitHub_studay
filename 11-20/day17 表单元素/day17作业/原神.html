@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神登录网站</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{
+            background: url('../img/bg.png') no-repeat 0 0/cover;
+        }
+        .wrap{
+            width: 325px;
+            height: 380px;
+            box-shadow: 0 0 0 1px pink;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -162.5px;
+            margin-top: -190px;
+            background: url('../img/dbefad7.png') no-repeat center/cover;
+        }
+        .wrap .close{
+            width: 25px;
+            height: 25px;
+            /* box-shadow: 0 0 0 1px black; */
+            margin-left: auto;
+            margin: 10px 10px auto auto;
+            background: url('../img/1c0b421.png') no-repeat -200px -112px;
+        }
+        .wrap .close:hover{
+            background: url('../img/1c0b421.png') no-repeat -200px -72px;
+        }
+        .wrap .title span{
+            display: inline-block;
+            font-size: 14px;
+            width: 100px;
+            height: 30px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .wrap .title .login{
+            color: #CE965F;
+            border-bottom:1px solid #CE965F;
+        }
+        .wrap .title{
+            position: relative;
+            left: 65px;
+            top: 30px;
+        }
+        .wrap form{
+            position: relative;
+            left: 65px;
+            top: 60px;
+        }
+        .wrap form input{
+            width: 200px;
+        }
+        .wrap .login1{
+            width: 200px;
+            height: 40px;
+            background-color: #373534;
+            position: relative;
+            left: 65px;
+            top: 100px;
+            text-align: center;
+            line-height:40px ;
+            border-radius: 3px;
+        }
+        .wrap .login1 a{
+            color: white;
+            text-decoration: none;
+        }
+        .wrap .box{
+            width: 200px;
+            font-size: 10px;
+            position: relative;
+            left: 65px;
+            top: 120px;
+        }
+        .wrap .box .right{
+            position: absolute;
+            right: 0;
+        }
+        .wrap .box a{
+            color: #CE965F;
+            text-decoration: none;
+        }
+        .wrap .box p{
+            margin-top: 5px;
+            font-size: 2px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="close"></div>
+        <div class="title">
+            <span>短信登录</span>
+            <span class="login">密码登录</span>
+        </div>
+        <form action="">
+            <input type="text" placeholder="手机号/邮箱/用户名">
+            <input type="password" placeholder="密码">
+        </form>
+        <div class="login1">
+            <a href="">登录</a>
+        </div>
+        <div class="box">
+            <a href="https://user.mihoyo.com/#/findAccountGuide" target="_blank">登录遇到问题？</a>
+            <a class="right" href="https://user.mihoyo.com/#/register" target="_blank">立即注册</a><br>
+            <p>
+                <span>
+                    未注册的手机验证后将自动登录。注册/登录即代表您同意并遵守
+                </span>
+                <a href="">《米哈游通行证用户服务协议》</a>
+    
+                <a href="">《米哈游通行证用户个人信息及隐私保护政策》</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

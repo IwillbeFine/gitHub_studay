@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 定义公共类方便引入颜色 */
+
+        .bottom {
+            margin-bottom: 15px;
+        }
+
+        /* 使图片垂直居中 */
+        img {
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+
+        .box ul li h3{
+            margin: 15px 15px 5px 15px;
+            font-size: 20px;
+        }
+
+        span {
+            color: red;
+        }
+
+        p{
+            margin-left: 10px;
+            line-height: 40px;
+        }
+        .box {
+            overflow: hidden;
+            width: 300px;
+            height: 700px;
+            border: 1px solid #b02319;
+            margin:10px auto; 
+        }
+        /*h1标签的样式*/
+        .box h1 {
+            width: 300px;
+            /* height: 50px; */
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            font-size: 30px;
+            /* font-weight: 400; */
+            background-color: #b02319;
+        }
+
+        .box ul li {
+            list-style: none;
+            margin-left: 14px;
+            width: 270px;
+            border-bottom: 1px dashed #bcbcbc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>全部产品</h1>
+        <!--结构相同 内容相似的布局用列表布局方式  -->
+        <ul>
+
+            <li>
+                <h3><img src="./img/face.png" width="24px" alt="">产口系列</h3>
+                <p><span>豆乳补水</span> 大米修补 樱花退黄</p>
+                <p>小麦清润 <span>苹果籽-孕纹护理</span></p>
+                <p>洋甘菊-舒缓修复 其他单品</p>
+            </li>
+            
+            <li>
+                <h3><img src="./img/body.png" width="24px" alt="">产品功效</h3>
+                <p><span>保湿补水</span> 美白亮肤 控油</p>
+                <p>紧致抗皱 <span>妊娠纹-防护</span></p>
+                <p>舒缓敏感 眼部护理 护唇</p>
+            </li>
+
+            <li>
+                <p><span>洁面</span> 水 眼霜 精华液 乳液</p>
+                <p>小麦清润 苹果籽-孕纹护理</p>
+                <p>洋甘菊-舒缓修复 其他单品</p>
+            </li>
+
+            <li>
+                <h3><img src="./img/pro.png" width="24px" alt="">身体护理步骤</h3>
+                <p><span>洗发护发</span> 身体洗护 孕纹护理</p>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

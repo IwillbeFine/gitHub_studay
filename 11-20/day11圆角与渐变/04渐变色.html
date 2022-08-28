@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            /* background-color: skyblue; */
+            /* 渐变色一共分为两种
+            渐变色属于图片不是背景颜色
+            线性渐变:
+                linear-gradient()
+                书写方式: linear-gradient(color1,color2)
+                标准完整版写法 linear-gradient(to 加方向,color1,color2)
+                方向可选值 1.具体像素值
+                2.角度值 deg  -- 45deg不需要to
+                3.turn 圈
+            径向渐变: */
+            background: linear-gradient(1.3turn, blue 33%, white 33%, white 66%, red 66%, red 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

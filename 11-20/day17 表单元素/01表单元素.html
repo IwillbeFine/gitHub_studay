@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息">
+    <meta name="description" content="描述信息">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haha</title>
+    <style>
+        /* input{
+            width: 200px;
+            height: 200px;
+            background: red;
+        } */
+    </style>
+</head>
+<body>
+    <!--
+        form 表单容器
+        元素类型 : 块元素
+        action = "请求地址"
+        method = "请求方式"
+            常见的方式 GET POST
+        name = "表单的名字  -- 数据的属性名"
+        value = "用户输入的数据 -- 数据的属性值"
+        target = "表单提交的位置 是当前页面还是新页面" 跟a标签一样
+    -->
+    <form target="_blank" action="https://www.baidu.com" method="POST" name="xixi">
+        <!--
+            input 
+            元素类型 : 行内块元素
+            所有表单元素都应该有的两个属性
+            type : 表单元素的类型
+            name : 表单的名字
+            value : 用户输入的内容
+            placeholder: 用户提示信息
+            required: 用户必填提示
+        -->
+
+        <!-- text 定义文本输入框 可以输入任意字符 -->
+        文本输入框:<input type="text"  name="user" value="" placeholder="请输入账号" required> <br>
+
+        <!-- password 定义密码输入框 -->
+        密码输入框:<input type="password" name="pwd" placeholder="请输入密码" value=""> <br>
+
+        <!-- 下拉选项 -->
+        <select  name="day">
+            <optgroup label="星期几">
+                <option value="1">星期一</option>
+                <option value="2">星期二</option>
+                <!-- selected 默认状态下显示星期几 -->
+                <option selected value="3">星期三</option>
+                <option value="4">星期四</option>
+            </optgroup>
+        </select> <br>
+        <!-- 单选框
+            radio 定义单选框
+            注意:单选必须name值相同
+            checked 默认选中
+            required 必须选择的值
+         -->
+        性别:
+        男<input type="radio" name="sex" value="男" >
+        女<input type="radio" checked name="sex" value="女"> <br>
+        <!-- 多选框
+        checkbox：定义一个多选框
+
+        -->
+        兴趣爱好:
+        <input type="checkbox" name="like" value="music" id="">唱歌
+        <input type="checkbox" name="like" value="dance" id="">跳舞
+        <input type="checkbox" name="like" value="rap" id="">rap
+        <input type="checkbox" name="like" value="basketball" id="">篮球<br>
+
+        <!-- 文本域 
+            cols 列宽
+            rows 行宽
+        -->
+        <textarea name="textall" id="" cols="30" rows="10"></textarea><br>
+
+        邮箱<input type="email" name="12" id=""><br>
+        颜色<input type="color" name="123" id=""><br>
+        日期<input type="date" name="345" id=""><br>
+
+        <!-- 提交按钮 -->
+        <input type="submit" value="提交">
+        <input type="button" value="提交">
+        <button>按钮</button>
+        <input type="reset" value="清空表单内容">
+    </form>
+
+    <!-- 
+       {
+            user : "你好哈哈哈哈",
+            pwd : 1234,
+            day : 3,
+            sex : ":nv",
+            like : ["music","rap" ],
+            textall : "asdkjfjhlakjsdf"
+       }
+    -->
+
+</body>
+</html>

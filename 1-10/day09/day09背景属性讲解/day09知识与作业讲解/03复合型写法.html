@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}li{list-style: none;}
+        div{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            background-color: aqua;
+           /* 复合型写法 多个图片用,隔开 */
+           /* background: color url repeat position/size;
+           背景图复合写法的层级关系，写在最前面的在最顶层，以此类推，最后面的在最底层
+           */
+           background: url("./img/5be1256e79844.jpg") no-repeat left top/200px 200px,
+           url("./img/pic1.webp") no-repeat right center/80px 80px,
+           url("./img/pic2.webp") no-repeat center/cover;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 样式优先级的关系
+        标签选择器 1
+        class选择器 10
+        id选择器 100
+        行内选择器 1000
+        !important 10000
+        */
+        #chou{
+            color: green;
+        }
+        p{
+            color: red;
+        }
+        .xiaochou{
+            color: yellow;
+        }
+        p{
+            color: blue !important;
+        }
+    </style>
+</head>
+<body>
+    <p style="color: red;" class="xiaochou" id="chou">小丑同学爱吃奥力给</p>
+</body>
+</html>

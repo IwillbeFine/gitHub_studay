@@ -1,0 +1,110 @@
+/* 清楚默认样式 */
+*{margin: 0px;padding: 0px;list-style: none;}
+.container{
+    /* 改变元素的定位 */
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+}
+.container .box1{
+    height: 40px;
+    background-color: #FCFCFC;
+    box-shadow: 0 0 0 1px #DBDEE1 ;
+}
+.container .box1 span{
+    font-size: 14px;
+    line-height: 40px;
+    float: left;
+    padding: 0 10px;
+}
+.container .box1 .sp-one{
+    height: 36px;
+    border: 1px solid #DBDEE1;
+    border-top:4px solid orange;
+    border-bottom: 1px solid white;
+    border-left: none;
+}
+.container .box2{
+    margin-top: 10px;
+    width: 1000px;
+}
+.container .box2 ul{
+    /* 设置宽高*/
+    height: 133px; 
+    width: 1016px;
+}
+.container .box2 ul li{
+    /* 开启怪异盒模型，让盒子的大小不会因为加了边框而发生改变 */
+    box-sizing: border-box;
+    /* 改变子代的元素的absolute的定位参照物 */
+    position: relative;
+    /* 让列表水平排布 */
+    float: left;
+    /* 设置宽高*/
+    width: 200px;
+    height: 133px;
+    /* 设置盒子的右边框距 */
+    margin-right: 2px;
+    border: 1px solid white;
+}
+.container .box2 ul li p{
+    /* 让p标签中的文字在父级标签li中原地浮动 */
+    position: absolute;
+    /* 设置当前标签的宽度和高度 */
+    height: 30px;
+    width: 100%;
+    /* 设置字体行高，让文字垂直居中*/
+    line-height: 30px;
+    /* 设置当前元素字体的大小 */
+    font-size: 14px;
+    /* 设置字体的颜色 */
+    color: white;
+    /* 给当前标签设置背景颜色和添加透明度 */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 让当前标签元素位置调至上一级背景图的正下方 */
+    bottom:0px;
+    /* 让文字水平剧中 */
+    text-align: center;
+}
+.container .box2 ul .list1{
+    /* 背景图片 不会撑开高度 */
+    background: url('../img/1.jpg') no-repeat center;
+}
+.container .box2 ul .list2{
+    background: url(../img/2.jpg);
+}
+.container .box2 ul .list3{
+    background: url(../img/3.jpg);
+}
+.container .box2 ul .list4{
+    background: url(../img/4.jpg);
+}
+.container .box2 ul .list5{
+    background: url(../img/5.gif);
+}
+.container .box2 ul li:hover{
+    border: 1px solid #FF8400;
+}
+.left{
+    position: absolute;
+    top: 90px;
+    left: 2px;
+    width: 29px;
+    height: 42px;
+    background: url('../img/6.png') no-repeat;
+}
+.right{
+    position: absolute;
+    top: 90px;
+    right:-7px;
+    width: 29px;
+    height: 42px;
+    background: url('../img/6.png') no-repeat top right;
+}
+.left:hover{
+    background: url('../img/6.png') no-repeat 0 -43px;
+}
+.right:hover{
+    background: url('../img/6.png') no-repeat -29px -43px;
+}

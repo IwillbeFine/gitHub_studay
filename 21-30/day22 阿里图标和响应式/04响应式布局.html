@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式布局</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+        /* 媒体查询 
+        screen 用于电脑,平板,智能手机
+        max-width 最大宽度
+        min-width 最小宽度
+        */
+        /* 最大宽度小于500px时 */
+        @media screen and (max-width:500px){
+            /* 需要发生变化的元素 */
+            div{
+               width: 100px;
+               height: 100px;
+               background-color: yellow; 
+            }
+        }
+        /* 最小宽度大于700px且最大宽度小于900px时 */
+        @media screen and (max-width:900px) and (min-width: 700px) {
+            /* 需要发生变化的元素 */
+            div{
+               width: 200px;
+               height: 200px;
+               background-color: blue; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

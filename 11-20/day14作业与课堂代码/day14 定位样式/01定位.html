@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        定位样式 position
+        定位分为：
+            绝对定位
+            相对定位
+            固定定位
+            粘滞定位
+        */
+        div{
+            width: 200px;
+            height: 200px;
+            /* position: absolute; */
+        }
+        .item1{
+            /* float: left; */
+            /* 开启一个绝对定位
+            特点:
+                1.开启绝对定位会和浮动一样原地漂浮起来 
+                2.开启绝对定位不会影响到后面的元素
+                3.同时开启绝对定位时后面设置的元素会覆盖前面的元素 
+                4.开启定位的元素会遮挡住后面的元素的所有内容
+                5.绝对定位的参照物是距离他最近的定位元素(不会找兄弟和后代元素的定位，只会往上找父级，直到找到为止，如果没有找到，就参照html定位)
+                6.绝对定位不会有多余的maring区域(不会占满一整行)
+                7.绝对定位的left和marging-left有很大区别，
+                left是参照离他最近的父级定位的，而margin是和普通的div一样，都是根据外边距移动。
+                8.绝对定位可以设置left和right值。
+            */
+            /* position: absolute; */
+            background-color: teal;
+
+            /* 新的坐标系布局
+            left bottom right top
+            当left top 和 right bottom同时存在的时候优先选择left bottom
+            */
+            /* left: 300px; */
+            /* right: 0px; */
+            /* top: 0; */
+            /* bottom: 0px; */
+            /* margin: auto; */
+            
+        }
+        .item2{
+            /* position: relative; */
+            /* right: -200px; */
+            position: absolute;
+            /* left: 20px; */
+            /* right: 20px; */
+            /* margin-left: 20px; */
+            /* top: 0; */
+            background-color: rebeccapurple;
+            border:2px solid black;
+        }
+        .wrap{
+            width: 400px;
+            height: 600px;
+            /* 相对定位
+            特征:
+                1.相对定位不会脱离文档流;
+                2.相对定位的参照物是自身
+                3.相对定位也会提升层级
+                4.相对定位会出现多余的maring(占满一整行)
+                5.相对定位设置right是无效的
+            */
+            /* position:absolute; */
+            /* position: relative; */
+            /* left: 100px; */
+            /* margin-left: 100px; */
+            /* top: 20px; */
+            /* margin-top:20px; */
+            /* right:-100px; */
+            /* right: -20px; */
+            /* margin-right:-20px; */
+            /* left: 20px; */
+            /* margin-left: 20px; */
+            /* bottom: 30px; */
+            background-color: rosybrown;
+        }
+        .item3{
+            /* margin-top: 200px; */
+            width: 200px;
+            height: 200px;
+            /* right:100px; */
+            /* position: absolute; */
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- <div>111</div> -->
+        <div class="item1"></div>
+        <div class="item2">234</div>
+        <div class="item3"></div>
+    </div>
+    
+    
+</body>
+</html>

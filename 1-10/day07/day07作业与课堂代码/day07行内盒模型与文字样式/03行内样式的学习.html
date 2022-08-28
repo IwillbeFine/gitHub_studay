@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>yangshi </title>
+    <style>
+        p{
+            width: 600px;
+            height: 400px;
+            /* 字体大小 */
+            font-size: 16px;
+            /* 字体颜色 */
+            /* color: red; */
+            background: rgb(120, 206, 81);
+            /* 
+            文字对其方式
+            left
+            right
+            center 居中
+            justify 设置两端对其
+            */
+            text-align:justify;
+            /* 首行缩进
+            px em/rem */
+            text-indent: 2em;
+            /* 字体间隙的设置 */
+            letter-spacing: 1px;
+            /* 设置加粗的字体
+            值的设置 具体整百数字 100 - 900 不要单位
+            bold 加粗 
+            normal 默认值（继承父级别）
+            lighter 细体
+            */
+            font-weight: normal;
+            /* 倾斜
+            italic 设置倾斜 */
+            font-style:normal;
+            /* 自定义字体 使用字体 
+            sans-serif 或者 (self 有笔锋)*/
+            /* font-family:self; */
+            /* font-family: "楷体"; */
+            font-family: "憨憨" , sans-serif; 
+            /*当憨憨字体没用时，使用备选字体sans-self*/
+        }
+        /* 引入字体 */
+        @font-face {
+            /* 字体的名字 */
+            font-family:"憨憨" ;
+            /* 引入字体的路径 */
+            src: url("./font/熊孩子体.ttf");
+        }
+        span{
+            /* background: blue; */
+            /* line-heigt:
+            作用：元素内文字的行高 
+            （100-font-size）/2
+            100-20
+            80/2 = 40
+            */
+            /* line-height: 100px; */
+
+            /* 文字布局的思路：
+            首先确定行内元素中最高的元素的元素，
+            确定行内盒子的基线让里面的所有行内元素参照于
+            最高元素的基线进行对齐
+            */
+            vertical-align: middle;
+        }
+        strong{
+            /* 文字布局参照物
+            默认文字是参照一个文本基线来进行对齐,
+             */
+            font-size: 50px;
+        }
+        img{
+            /* 设置文本的基线对齐方式
+            baseline 默认值基线对齐
+            middle 中线对齐
+            top 行框的顶部
+            bottom 行框的底部对齐
+            可以设置具体的像素值
+            */
+            vertical-align: -12px;
+        }
+    </style>
+
+</head>
+<body>
+    <p>
+        <img height="40" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3362606401,1751985198&fm=26&gp=0.jpg" alt="">
+        <span> 须知少时凌云志,曾许人间第一流</span>
+    </p>
+</body>
+</html>

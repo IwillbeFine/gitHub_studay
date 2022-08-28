@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+           /* 代码书写规范
+           1.content:""
+           2.布局位置相关的属性 position top left right z-index float display
+           3.盒模型 width height paddign margin border
+           4.文字样式 font-size text-align
+           5.视觉效果 background-color -img color trasnform
+           */
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        div{
+            width: 5rem;
+            height: 5rem;
+            background-color: red;
+        }
+        div div{
+            width: 1rem;
+            height: 1rem;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面的重绘(rpeaint)与页面的重排(reflow) -->
+    <div id="box">
+        <div></div>
+    </div>
+    <!-- 
+        手机端适配方法
+        1.百分比布局
+        2.rem 布局
+            em 相对自己
+            rem 相对根元素字体
+     -->
+     <script>
+        //  ul 设计图 760 800 600
+        // 两个参数一个是设计图大小  一个是根字体大小
+        getrem(1000,100)
+
+        function getrem(uisize,rem){
+            var html = document.getElementsByTagName("html")[0]
+            // 计算根字体的大小
+            var owidth = document.documentElement.clientWidth || document.body.clientWidth;
+            html.style.fontSize = owidth / uisize * rem + "px"
+
+            console.log(html.style.fontSize)
+        }
+        window.onresize = function(){
+            getrem(1000,100)
+        }
+     </script>
+    
+</body>
+</html>

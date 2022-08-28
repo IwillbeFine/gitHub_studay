@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 400px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST" name="form">
+        <fieldset>
+            <legend>注册信息</legend>
+        <table border="1">
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" name="user" id="" placeholder="请输入您的账号"></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;">密码：</td>
+                <td><input type="password" name="pwd" id="" placeholder="请输入您的密码"></td>
+            </tr>
+        </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>个人信息</legend>
+            <table border="1">
+                <tr>
+                    <td>姓名：</td>
+                    <td><input type="text" name="name" placeholder="请输入你的姓名"></td>
+                </tr>
+                <tr>
+                    <td> 年龄：</td>
+                    <td><input type="text" name="age" placeholder="请输入你的年龄" id=""></td>
+                </tr>
+                <tr>
+                    <td>
+                        性别：
+                    </td>
+                    <td>
+                        <input type="radio" name="sex" id="男" checked><label for="男">男</label>
+                        <input type="radio" name="sex" id="女"><label for="女">女</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>国籍：</td>
+                    <td>
+                        <select name="" id="">
+                            <optgroup label="请选择你的国籍">
+                            <option value="1" selected>中国</option>
+                            <option value="2">美国</option>
+                            <option value="3">新加波</option>
+                            <option value="4">加拿大</option>
+                            <option value="5">法国</option>
+                            <option value="5">法国</option>
+                            <option value="5">法国</option>
+                            <option value="5">法国</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

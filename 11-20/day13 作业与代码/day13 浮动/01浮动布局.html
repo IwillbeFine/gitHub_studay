@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;;
+        }
+        div{
+            width: 200px; 
+            height: 200px;
+            background: rgb(176, 72, 202);
+            /* margin: 10px; */
+            /* display: inline-block; */
+            /* float 浮动 
+            left  左浮动
+            right
+            特征:
+            1.设置浮动元素以后,元素会原地漂浮起来,同时不在遵循文档流的布局(脱离文档流)
+            2.任何元素设置浮动以后会强行转换为行内块元素,但是他不参与基线对齐
+            3.浮动元素不支持margin : auto 居中
+            4.浮动元素只会影响到后面的元素
+            */
+            /* float: left; */
+            /* margin: 20px 20px */
+        }
+        .box1{
+            /* margin-left:100px; */
+            height: 200px;
+            float: left;
+        }
+        .box2{
+            float: left;
+            background: skyblue;
+            /* margin-left:100px; */
+        }
+        .box3{
+            /* z-index: 20; */
+            float: left;
+            height: 100px;
+            background-color: springgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        css 给我们提供了三种布局方案
+        普通流布局
+            块元素
+            行内元素
+            行内块元素
+        浮动布局
+        定位布局
+     -->
+     <div class="box1"></div>
+     <div class="box2">342</div>
+     <div class="box3"></div>
+     <!-- <div class="box4"></div> -->
+</body>
+</html>

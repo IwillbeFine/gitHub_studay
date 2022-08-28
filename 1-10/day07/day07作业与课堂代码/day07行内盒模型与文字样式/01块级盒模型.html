@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            /* 内容区域 */
+            width: 200px;
+            height: 199px;
+            background: red;
+            padding-top: 1px;
+            margin-bottom: 50px;
+            /*
+            设置padding
+            设置border
+            overflow：hiddent
+            来阻止外边距传递
+            */
+            /* 
+            设置超出显示状态
+            scroll 
+            auto 超出自动显示滚动条
+            hidden 隐藏
+            开启一个bfc容器 格式化上下文
+            position
+            float
+            overflow
+            */
+            overflow:auto;
+            /*开启怪异盒模型 盒子大小不会改变*/
+            box-sizing:border-box;
+            border:10px solid blue;
+            overflow:auto;
+        }
+        .sun{
+            width: 50px;
+            height: 50px;
+            background: yellow;
+            border:10px solid black;
+            margin-left:130px;
+            /* 只有margin-left和margin-top会改变自身的位置*/
+            /* margin-bottom: -20px; */
+            /* margin: 50px ; */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            /* margin: 60px 0; */
+            margin-top: -30px;
+            /*兄弟元素垂直布局会出现外边距合并
+            1.两个都为正数，谁的值大听谁的
+            2.两个都为负数,谁的绝对值大听谁的
+            3.一个正数一个负数，取和
+            */
+        }
+        h1{
+            border:10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 盒模型
+    块元素才支持宽度
+    -->
+    <h1>1234435</h1>
+    <div class="box">
+        <div class="sun"></div>
+    </div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        body{
+            perspective: 800px;
+            transform-style: preserve-3d;
+        }
+        .box{
+
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            background: sienna;
+            overflow: hidden;
+        }
+        .sun{
+            width: 200px;
+            height: 200px;
+            background: seagreen;
+            transform: rotateX(90deg) translateX(150px) ;
+        }
+        .sun2{
+            width: 200px;
+            height: 200px;
+            background: orangered;
+            transform: rotateX(90deg) translateX(100px)  ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="sun"></div>
+        <div class="sun2"></div>
+    </div>
+    
+</body>
+</html>

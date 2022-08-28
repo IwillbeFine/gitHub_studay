@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        div{
+            width: 500px;
+            height: 500px;
+            background: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6e5ac474a830f6f6537444c421d60e43bade0c5f.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614263419&t=c06d5703b6469267760027df5e02e892") no-repeat center/cover;
+            filter: contrast(50%);
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <!-- 头部区域 -->
+    <header>
+        网页头部区域
+    </header>
+    <!-- 网页主体区域 -->
+    <main>
+        网页主体区域
+        <article>
+            文章区域
+        </article>
+        <nav>
+            导航区域
+        </nav>
+        <aside>
+            侧边栏区域
+        </aside>
+        <section>
+            划分区块
+        </section>
+    </main>
+    <!-- 网页底部区域 -->
+    <footer>
+        网页的底部区域
+    </footer>
+
+    <!-- 音频视频标签
+    src = '视频路径'
+    controls 播放控件
+    muted 有无声音 有就是静音
+    autoplay 自动播放 大部分浏览器都不支持
+    loop 是否循环播放 有就是循环
+    poster="url" 设置封面地址
+    -->
+    <video height="100" poster="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb8859c31e431fe84c8977705d1bd442.jpg?w=2452&h=920" muted loop  controls src="https://lmbsy.qq.com/uwMROfz2r5zAoaQXGdGnC2dfDma7NyshNhpHvcEisM-VRrjn/i0024ihpojs.mp4?vkey=BA147A6BCB06D4724E3A4A510A37543EB0E0AD88F80B20E3A856885B6A8AEF2370E83839A61CAFFAF72F67877464EC9621AC66BAFD6AB35ADC1592669456A2F7AB34355D5978F8BB5346D2D0E6D8647CED49045D4A2ADD0A5338DF5FC9B76A679FA8B990E667FF0080ACE6F0214356FD07ADC4A30645CFDB41937E2B731D39F2&sdtfrom=v1006&guid=bdf9e3b4f30ba915df7ec2f100c31be4&start=60&end=70"></video>
+
+    <!-- 跟video 一模一样 不支持宽度高度 不支持海报 不支持静音 -->
+    <audio controls src="https://m10.music.126.net/20210126224628/daaed666d7018d1c0ff2af44b92bc5f6/yyaac/5208/0e5e/5458/ebc69cfaa59454b440afc2abb865fd9a.m4a"></audio>
+    
+    <!-- iframe 内联框架
+    将其他网站引入到你的网站  -->
+
+    <iframe src="https://music.163.com/" frameborder="0"></iframe>
+    <!-- 配合a标签使用 -->
+    <a href="https://lmbsy.qq.com/uwMROfz2r5zAoaQXGdGnC2dfDma7NyshNhpHvcEisM-VRrjn/i0024ihpojs.mp4?vkey=BA147A6BCB06D4724E3A4A510A37543EB0E0AD88F80B20E3A856885B6A8AEF2370E83839A61CAFFAF72F67877464EC9621AC66BAFD6AB35ADC1592669456A2F7AB34355D5978F8BB5346D2D0E6D8647CED49045D4A2ADD0A5338DF5FC9B76A679FA8B990E667FF0080ACE6F0214356FD07ADC4A30645CFDB41937E2B731D39F2&sdtfrom=v1006&guid=bdf9e3b4f30ba915df7ec2f100c31be4&start=60&end=70" target="myifram"> 点击观看视频</a>
+    <iframe style="border: 1px solid red;" src="" name="myifram" frameborder="0"></iframe>
+</body>
+</html>

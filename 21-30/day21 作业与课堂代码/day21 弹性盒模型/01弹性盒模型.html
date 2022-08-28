@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .box{
+            width: 420px;
+            height: 520px;
+            /* 
+            开启弹性容器后，里面的元素默认从左到右排布。
+            里面的元素强行转换为行内块元素。
+            当弹性元素大于弹性容器时,里面的元素等比例缩小。
+            */
+            display: flex;
+            border:2px solid rgb(111, 136, 209);
+
+            /* 改变排布方向
+            默认值 row 水平方向排布
+            colum 垂直方向排布
+            row-reverse 从右向左 */
+            /* 主轴排列方向 */
+            flex-direction: row;
+
+            /* 弹性容器换行
+            默认值 none 不换行
+            wrap 换行 */
+            /* flex-wrap:wrap; */
+
+            /* 弹性元素的排列方向 */
+            /* 主轴的对齐方式
+            flex-start 默认值 主轴的起点
+            space-between 两端对齐中间留白
+            space-around 两端和中间都会留白
+            */
+            justify-content: space-between;
+
+            /* 
+            多行弹性元素侧轴的对齐方式
+            侧轴方向的元素对齐方式 值的选项跟justify-content 一模一样
+            */
+            align-content: space-between;
+
+            /* 
+            单行弹性元素侧轴排列方向
+            flex-start 默认侧轴排列方式
+            center 居中
+            */
+            /* align-items: center; */
+
+            /* 复合写法 flex-flow : 主轴方向 是否换行 */
+            /* flex-flow: row wrap; */
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+        .box div{
+            /* float: left; */
+            /* position: absolute; */
+            width: 100px;
+            height: 100px;
+            /* 元素缩小系数 */
+            /* flex-shrink: 8; */
+
+            /* 元素的生长系数 */
+            flex-grow: 0;
+            
+            /* 元素的基础大小 只能调整width的值 */
+            flex-basis: 200px;
+            background-color: red;
+            /* 复合写法
+            书写顺序 成长 缩小 基础大小
+             */
+            /* flex: 0 1 auto;
+            flex: 0 1 20%;
+            flex: 1; */
+        }
+        .box div:nth-child(1){
+            /* 弹性容器的成长 缩小 默认大小 */
+            background-color: rgb(70, 225, 65);
+            /* 单独设置元素自己的对齐方式
+            用法跟 align-items: center; 一模一样
+             */
+             /* 弹性元素的位置 
+             
+             order 值越小越靠前 默认值0 */
+            order: 1;
+            align-self:flex-start;
+        }
+        .box div:nth-child(2){
+            order: 2;
+            background-color: rgb(225, 222, 65);
+        }
+        .box div:nth-child(3){
+            order: 3;
+            background-color: rgb(225, 65, 177);
+        }
+        .box div:nth-child(4){
+            background-color: rgb(65, 174, 225);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <!-- <div></div>
+        <span>123</span>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div> -->
+
+    </div>
+    <!-- 
+        弹性容器
+        弹性元素
+     -->
+    
+</body>
+</html>

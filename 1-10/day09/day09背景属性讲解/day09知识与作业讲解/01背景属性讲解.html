@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}li{list-style: none;}
+        div{
+            width:600px;
+            height: 500px;
+            color: red;
+            border: 40px dashed blue;
+            padding: 20px;
+            /* 设置背景颜色 */
+            /* background-color: red; */
+            /* background-image: 设置背景图片 */
+            background-image: url("./img/5be1256e79844.jpg");
+            /* 背景图片小于容器大小会进行垂直水平的平铺 */
+            /* background-repeat:设置背景的平铺效果
+            值的书写 repeat-x x轴的平铺repeat-y y轴的平铺
+            no-repeat 不平铺
+            round 尽力平铺放不下一张图片会增长拉伸
+            space 尽力平铺放不下一张图片会在中间区域留白
+            背景填充区域就变成了padding-box
+            */
+            background-repeat:no-repeat;
+            /*  */
+            /* background-position: x y 背景图位置调整
+            1.关键词设置， left right top bottom center
+            2.设置具体的偏移量
+            设置不平铺以后偏移的原点是 padding-box
+            */
+            background-position:center;
+            /* background-origin: padding-box; 改变背景偏移原点*/
+            background-origin: content-box;
+            /* 手动修改背景图的大小 */
+            /* background-size: w h 设置背景图的大小 
+            1.设置具体的像素值
+            2.auto 自动计算
+            3.cover 等比例放大到填充满整个容器
+            4.contain  等比例放大到触碰到其中一边就停止
+            */
+            /* background-clip: content-box;背景图的裁剪，默认值border-box 值跟origin的一样 */
+            background-clip: content-box;
+            background-size:cover;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+    </div>
+</body>
+</html>

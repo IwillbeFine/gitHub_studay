@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}li{list-style: none;}
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            background: red;
+        }
+        /* 伪类选择器的书写
+            1.基础写法: 选择器(触发源) :hover{
+                鼠标悬停时的效果
+                只要参与数值变化的都可以在hover里面触发
+                display也可以
+            }
+            2.进阶的写法： 选择器(触发源):hover 选择器（变化的元素）{代码区域}
+        */
+        /* .box:hover{
+            height: 400px;
+            background: blue;
+            display: none;
+        } */
+        .sun{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+        }
+        .box:hover .sun{
+            height: 150px;
+            width: 150px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="sun">
+        
+        </div>
+    </div>
+    <!-- hover
+        伪类选择器
+     -->
+
+    <script>
+    </script>
+</body>
+</html>

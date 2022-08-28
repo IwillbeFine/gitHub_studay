@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 后代选择器 
+        作用：选择到满足条件的所有后代
+        */
+        .box div p{
+            color: green;
+        }
+        /* 子代选择器
+        作用：选择满足条件的子代元素 */
+        .box > p{
+            color: blue;
+        }
+        p{
+            color: red;
+        }
+        #box p{
+            color: yellow;
+        }
+        #wei{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="xiaochou ">小丑同学</p>
+    <div class="box" id="box">
+        <div>
+            <p id="zhou">周同学</p>
+        </div>
+        <p id="wei">阿伟同学</p>
+    </div>
+</body>
+</html>

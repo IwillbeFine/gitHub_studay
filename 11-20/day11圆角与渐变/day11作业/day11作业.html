@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            box-sizing: border-box;
+            padding: 25px 10px;
+            margin: 100px auto;
+            border:5px solid rgb(232,232,232);
+            border-radius: 10px;
+        }
+        .box:hover {
+            border:5px solid rgb(255,0,0);
+        }
+        .box .sun{
+            height: 109px;
+            padding-bottom: 15px;
+            border-bottom:1px dashed #a1a1a1;
+        }
+        .box .sun h4{
+            margin: 10px auto 20px 20px;
+        }
+        .box .sun .bg{
+            height: 70px;
+            width: 70px;
+            background: url('./image/bg.jpg') no-repeat center/cover;
+            box-shadow: 0 0 0 4px rgb(232,232,232);
+            border-radius: 35px;
+            margin-left: 15px;
+            float: left;
+        }
+        .box .sun h5{
+            box-sizing: border-box;
+            padding-left: 110px;
+            margin-top: 30px;
+        }
+        .box .sun p{
+            font-size: 14px;
+            color: #a1a1a1; 
+            padding-left: 110px;
+        }
+        .box p{
+            color: #616161;
+            padding-top: 15px;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 整体的大盒子 -->
+    <div class="box">
+        <!-- 内部上盒子 -->
+        <div class="sun">
+            <h4>学生简介</h4>
+            <div class="bg"></div>
+            <h5>邱非</h5>
+            <p>未来某数据中心高级前端工程师</p>
+        </div>
+        <p>
+            5年大厂前端经验，曾就职于黑龙科技，后就职于摸摸教育。3年教学经验，有Object-C，swift语言开发经验。后来转型进攻前端，对react-native、phoneGap以及对谷歌新推出的Flutter移动端框架有深入研究。曾经独立负责应用过React/Vue项目开发，有着丰富的实战经验。对ES6/7、Nodejs、Vue、React、PWA技术栈有深入的理解，对于流行的小程序技术也有深入的见解，善于将丰富的开发经验融入到课程中。
+        </p>
+    </div>
+</body>
+</html>

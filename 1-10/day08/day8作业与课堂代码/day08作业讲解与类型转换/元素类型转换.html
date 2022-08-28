@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        li{list-style: none;}
+        .list{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 20px;
+            padding: 20px;
+            /* 元素类型转换 */
+            display: inline-block;
+            vertical-align: top;
+            /* 块元素转换为行内块元素的特点
+            1.会产生空白解析 解决方法，设置父级字体为0
+            2.拥有行内元素的基线对齐特征，解决方法
+            vertical-align：top */
+        }
+        .list2{
+            width: 100px;
+            height: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        1x
+    </div>
+    <div class="list2 list">
+        2
+        <p>事实上x、</p>
+        <p>ssdsad sdsa地方发放安抚大幅度阿斯顿发大水反对法</p>
+        </div>
+        <div class="list">
+        3x
+        </div>
+        <p>safdasdf</p>
+    <!-- 元素类型
+        块级元素
+
+        行内元素
+
+        行内块元素 img
+            支持宽高也支持上下margin支持padding
+            排列方式遵循行内元素
+     -->
+</body>
+</html>

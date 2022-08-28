@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haha</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .wrap{
+            width: 811px;
+            height: 315px;
+            margin: 100px auto;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid rgb(202, 177, 34);
+        }
+        .wrap h2{
+            font-size: 30px;
+            /* margin-top: 10px; */
+            width: 405px;
+        }
+        .wrap h2 i{
+            display: inline-block;
+            height: 4px;
+            width: 80px;
+            vertical-align: middle;
+            background-color: rgb(207, 167, 114);
+        }
+        .wrap .left , .wrap .right{
+            position: relative;
+            width: 380px;
+            height: 180px;
+            margin-top: 25px;
+        }
+        .wrap .left{
+            float: left;
+        }
+        .wrap .right{
+            float: right;
+        }
+        .wrap .content{
+            height: 100%;
+            width: 235px;
+            box-sizing: border-box;
+            padding-left: 50px;
+            padding-top: 20px;
+            position: absolute;
+            right: 0;
+            border: 1px solid rgb(255, 166, 0);
+        }
+        .wrap .img{
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 12%;
+        }
+        .wrap .content p{
+            margin-top: 10px;
+            font-size: 12px;
+            width:140px ;
+        }
+        .wrap .content h4{
+            font-size: 20px;
+        }
+        .wrap .content div i{
+            float: right;
+            border: 10px transparent solid;
+            border-left: 10px solid orange;
+        }
+        .wrap .content div p{
+            width: 152px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h2>We Provide great service and support <i></i> </h2>
+        <div class="left">
+            <div class="img">
+                <img width="180" src="./img/1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h4>Real State Law</h4>
+                <p>Real estate brokers, agents and sales people are licensed and regulated.</p>
+                <div>
+                    <p>Read More <i></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="img">
+                <img width="180" src="./img/1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h4>Real State Law</h4>
+                <p>Real estate brokers, agents and sales people are licensed and regulated.</p>
+                <div>
+                    <p>Read More <i></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

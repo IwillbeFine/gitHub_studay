@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /* 后代选择器 */
+        /* div span{
+            color: blue;
+        }
+        div p{
+            color: yellow;
+        } */
+        /* 并列选择器 */
+        span,p{
+            color: blueviolet;
+        }
+        /* 子代元素器
+        选择元素中的子元素
+         */
+        div > span{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>李旗</span>
+        <p>小丑
+            <span>陈卓</span>
+        </p>
+    </div>
+</body>
+</html>

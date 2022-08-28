@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 100px auto 0px;
+            /* 变换属性之旋转
+            rotate 传入一度数值 */
+            /* transform: rotate(1.2turn) ; */
+            /* 平移
+            translateY x轴方向移动
+            translateX y轴方向移动
+            translate(x,y,z)*/
+            /* transform: translate(100px,0); */
+           transition: 1s;
+           /* 设置变化原点 默认原点 center 居中
+           可选参数 方向值 left right .,...
+           还可以设置具体的值或者百分比   transform-origin: x y
+            */
+           transform-origin: 50% 50%;
+           /* 复合型写法 */
+           transform: translateX(0) translateY(0) scale(1);
+           animation: run 3s  forwards;
+        }
+        div:hover{
+             /* 缩放
+             默认值 1 
+             大于1 放大
+             小于1 缩小
+              */
+             /* transform: scale(2); */
+            /* transform: translate(0px,100px); */
+            /* 倾斜 */
+            /* transform: skew(-35deg); */
+
+            
+        }
+        p{
+            text-align: center;
+        }
+        div:hover{
+            transform:rotate(185deg) ;
+        }
+        div:last-of-type:hover{
+            /* transform: translateX(100px) rotate(45deg); */
+        }
+    </style>
+</head>
+<body>
+    <!-- 变形一共分为
+    移动
+    旋转
+    缩放
+    倾斜
+ -->
+    <div>123</div>
+    <div>123</div>
+
+    <p>234134</p>
+</body>
+</html>

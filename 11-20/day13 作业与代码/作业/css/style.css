@@ -1,0 +1,99 @@
+.main{
+    width: 1200px;
+    height: 560px;
+    box-shadow: 0 0 0 2px #cccccc;
+    margin: 50px auto;
+}
+
+.main .list{
+    width: 750px;
+    height: 22px;
+    /* background-color: springgreen;s */
+    margin: auto;
+
+}
+
+.main .list ul li{
+    list-style: none;
+    height: 16px;
+    /* background-color: skyblue; */
+    float: left;
+    padding: 0 20px;
+    border-right: 2px solid #bbb;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 3px;
+    line-height: 15px;
+}
+
+.main .box{
+    width: 1170px;
+    height: 500px;
+    /* background-color: tomato; */
+    margin: 0 20px;
+    clear: both;
+}
+
+.main .box .one{
+    width: 320px;
+    height: 500px;
+    /* background-color: yellow; */
+    border-right: 2px solid rgb(221,221,221);
+    float: left;
+}
+.main .box .twhre{
+    width: 230px;
+    height: 500px;
+    border-right: 2px solid rgb(221,221,221);
+    float: left;
+}
+
+.main .box .ffsix{
+    width: 210px;
+    height: 500px;
+    float: left;
+    border-right: 2px solid rgb(221,221,221);
+}
+.main .box .sgnine{
+    width: 400px;
+    height: 500px;
+    float: left;
+}
+
+.bg2-3{
+    border-bottom: 2px solid rgb(221,221,221);
+}
+.bg4{
+    width: 210px;
+    height: 160px;
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(221,221,221); 
+}
+.bg5{
+    width: 210px;
+    height: 150px;
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(221,221,221); 
+}
+.bg7{
+    width: 198px;
+    height: 180px;
+    float: left;
+    border-bottom: 2px solid rgb(221,221,221);
+    border-right: 2px solid rgb(221,221,221);
+}
+.bg8{
+    width: 200px;
+    height: 180px;
+    border-bottom: 2px solid rgb(221,221,221);
+    float: left;
+}
+.bg9{
+    width: 400px;
+    height: 320px;
+
+}
+img{
+    float: left;
+}
+

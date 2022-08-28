@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        body{
+            background-color: #ccc;
+        }
+        .box{
+            width: 120px;
+            height: 180px;
+            margin:50px;
+            border-radius: 5px;
+            background: white;
+            overflow: hidden;
+        }
+        .box li{
+            width: 200px;   
+            height: 30px;         
+            font-size: 0;
+            line-height: 30px;
+            padding-left: 20px;
+            transition: .3s;
+            overflow: hidden;
+        }
+        .box li span{
+            font-size: 12px;
+            vertical-align: middle;
+        }
+        .box li:hover{
+            padding-left: 25px;
+            background-color:#e5e9ef ;
+        }
+        .box li:hover .right{
+            margin-left: 5px;
+        }
+        .box li i{
+            width: 6px;
+            height: 13px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .box li .left{
+            background: url(./img/13-1.png) no-repeat 0px -1621px;
+            margin-right: 5px;
+        }
+        .box li .right{
+            background: url(./img/13-1.png) no-repeat 0px -1584px;
+            transition: .3s;
+            margin-left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="box">
+        <li>
+            <i class="left"></i>
+            <span>连载动画</span>
+            <i class="right"></i>
+        </li>
+        <li>
+            <i class="left"></i>
+            <span>完结动画</span>
+            <i class="right"></i>
+        </li>
+        <li>
+            <i class="left"></i>
+            <span>咨询</span>
+            <i class="right"></i>
+        </li>
+        <li>
+            <i class="left"></i>
+            <span>官方延伸</span>
+            <i class="right"></i>
+        </li>
+        <li>
+            <i class="left"></i>
+            <span>新番时间表</span>
+            <i class="right"></i>
+        </li>
+        <li>
+            <i class="left"></i>
+            <span>番剧索引</span>
+            <i class="right"></i>
+        </li>
+    </ul>
+</body>
+</html>

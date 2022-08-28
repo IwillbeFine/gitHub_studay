@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        body,html{
+            height: 100%;
+        }
+        body{
+            background: url(./img/bg.png) no-repeat center/cover;
+        }
+        span{
+            color: rgb(221, 199, 1);
+            font-size: 11px;
+        }
+        .wrap{
+            width: 500px;
+            height: 580px;
+            position: absolute;
+            /* box-shadow: 0 0 0 1px red; */
+            left: 0;top: 0;right: 0;bottom: 0;
+            margin: auto;
+            background: url(./img/dbefad7.png) no-repeat center/cover;
+        }
+        .close{
+            width: 30px;
+            height: 30px;
+            /* 绝对定位的参照物是距离他最近的一个定位父级元素,如果没有就参照于html
+            */
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(./img/1c0b421.png) no-repeat -197px -110px;
+        }
+        .wrap .main{
+            width: 290px;
+            height: 384px;
+            margin: auto;
+            margin-top: 90px;
+            /* box-shadow:  0 0 0 1px blue; */
+        }
+        .wrap .main .top span{
+            float: left;
+            text-align: center;
+            line-height: 58px;
+            font-size: 18px;
+            width: 144px;
+            color: rgb(36, 36, 36);
+            border-bottom: 3px solid transparent;
+        }
+        .wrap .main .top .on{
+            border-bottom: 3px solid orangered;
+        }
+        .wrap .main form li{
+            border-bottom: 1px solid #ccc;
+            margin-top: 40px;
+        }
+        .wrap .main form li input{
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+        .wrap .main form .sub{
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            border: none;
+            margin-top: 40px;
+            background: rgb(37, 37, 37);
+        }
+        .wrap .main .question{
+            margin: 15px 0;
+        }
+        .wrap .main .question::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .wrap .main .question span{
+            float: left;
+        }
+        .wrap .main .question .right{
+            float: right;
+        }
+        .wrap .main .botton{
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+            <div class="top">
+                <span >短信登录</span>
+                <span class="on">密码登录</span>
+                <div style="clear: both;"> </div>
+            </div>
+            <!-- 登录注册 -->
+            <form action="">
+                <ul>
+                    <li>
+                        <input placeholder="手机/邮箱/用户名" type="text">
+                    </li>
+                    <li>
+                        <input placeholder="请输入密码" type="password" name="" id="">
+                    </li>
+                </ul>
+                <input class="sub" type="submit" value="登录">
+            </form>
+            <!-- 文字区域 -->
+            <div class="question">
+                <span>登录遇到问题？</span>
+                <span class="right">立即注册</span>
+            </div>
+            <p class="botton">
+                登录即代表您同意并遵守 <span>
+                    《米哈游通行证用户服务协议》 《米哈游通行证用户个人信息及隐私保护政策》
+                </span>
+            </p>
+            <div class="close">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

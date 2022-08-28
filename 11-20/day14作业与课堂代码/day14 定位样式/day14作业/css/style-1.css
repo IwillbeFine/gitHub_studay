@@ -1,0 +1,83 @@
+/* 清楚默认样式 */
+*{margin: 0;padding: 0;list-style: none;}
+/* 最外层盒子的样式 */
+.container{
+    height: 300px;
+    background-color: #663399;
+    margin: 100px auto;
+}
+/* 内容区域盒子的样式 */
+.container .contain{
+    background-color: #0477C0;
+    position: relative;
+    width: 220px;  
+    top: -57px;
+    left: 100px;
+}
+/* 内容区域盒子中h3标题的样式 */
+.container .contain h3{
+    background: #188EEE url('../img/bg.png') no-repeat 10px center/20px;
+    color: white;
+    text-indent: 3em;
+    padding: 16px 0;
+}
+/* 内容区域盒子中ul的样式 */
+.container .contain ul{
+    padding: 0px 0px 10px 10px;
+    position: relative;
+}
+/* 内容区域盒子中ul li中的h4标题的样式 */
+.container .contain ul li h4{
+    color: white;
+    position: relative;
+    padding: 10px 10px 0 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+/* 内容区域盒子中ul li h4中的span标签的样式 */
+.container .contain ul li h4 span{
+    position: absolute;
+    right: 10px;
+}
+/* 内容区域盒子中ul li 中p标签的样式 */
+.container .contain ul li p{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #97D2F7;
+}
+/* 内容区域盒子中ul li的样式 */
+.container .contain ul li{
+    /* position: relative; */
+    border-bottom: 0.5px solid #dbd1d171;
+}
+/* 内容区域盒子中ul li中div的样式 */
+.container .contain ul li div{
+    display: none;
+    width: 980px;
+    height:423px;
+    position: absolute;
+    left: 220px;
+    top:0px;
+}
+/* 以下全是内容区域盒子中ul li中div标签的hove效果 */
+.container .contain ul li:hover .one{
+    display: block;
+    background-color: rgb(255, 3, 234);
+}
+.container .contain ul li:hover .two{
+    display: block;
+    background-color: skyblue;
+}
+.container .contain ul li:hover .three{
+    display: block;
+    background-color: yellowgreen;
+}
+.container .contain ul li:hover .four{
+    display: block;
+    background-color: pink;
+}
+.container .contain ul li:hover .five{
+    display: block;
+    background-color: red;
+}

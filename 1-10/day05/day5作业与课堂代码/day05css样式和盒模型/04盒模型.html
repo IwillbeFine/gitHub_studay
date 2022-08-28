@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04</title>
+    <style>
+    /* 
+    组成盒模型的区域分别是
+    contetn区域，内容区域
+    border区域，边框区域
+    padding区域，内边距区域
+    margin区域，外边距区域
+    水平布局区域大小=width+左右的margin+左右的padding+左右的border
+    垂直区域区域大小=height+上下的margin+上下的padding+上下的border
+    */
+        div{
+            /*设置宽度\高度width\height:内容区域的宽度\高度*/
+            width: 200px;
+            height: 200px;
+            /*调整盒子位置
+            关键词 left左边 right右边 bottom下边 top上边
+            单例写法
+            margin-left: 100px;
+            margin-bottom: 30px;
+            复合写法
+            margin:上 右 下 左
+            margin:上 左右 下
+            margin:上下 左右
+            */
+            /* margin: 50px 50px; */
+            /* background: blue; */
+        }
+        .blue{
+            /*盒子内边距区域会撑大盒子的大小*/
+            padding: 50px;
+            /*border区域
+            border-width:也支持单独设置 上下左右
+            border-color:
+            border-style:
+                常用值 dotted 圆点边框
+                    dashed 矩形边框
+                    solid 实线
+            border-right:5px solid black;
+            transparent 透明颜色
+            复合写法
+            */
+            border:50px solid red;
+            border-left: 30px; /*左边框*/
+            border-right:20px ;/*有边框*/
+            border-top: 40px; /*上边框*/
+            border-bottom: 60px;/*下边框*/
+            border: 50px;/*上右下左边框*/
+            border-style: solid;
+            border-color: red yellow blue green;
+            margin: 100px;
+        }
+        .red{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="blue">
+        <div class="red"></div>
+    </div>
+    <!-- 
+        layout
+       1 将元素放到页面的任意位置，文档流
+        1.文档是一个多层结构
+        2.用户看到的只能看到最顶层
+        对于元素来说 1.在文档流中，2.不在文档流中(脱离文档流)
+
+        2.元素在文档流中有什么特点
+            1.块元素 h p ul ol dl dt dd li div
+                默认占满一整行
+                默认内容撑开高度
+            2.行内元素 a img strong  span
+                内容决定大小
+            3.行内块元素
+    -->
+    <!-- 盒模型 （box model） 
+        css页面中规定 所有的盒模型都是一个矩形
+    -->
+    
+</body>
+</html>

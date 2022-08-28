@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        a{
+            color: inherit;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .container{
+            background-color: rgb(36,36,36);
+            height: 70px;
+        }
+        .container .content{
+            width: 1077px;
+            height: 100%;
+            margin: auto;
+            /* background-color: red; */
+        }
+        .container .content ul{
+            float: left;
+            height: 100%;
+            list-style-type: none;
+        }
+        .container .content ul li{
+            float: left;
+            color: #ccc;
+            padding: 0 17px;
+            line-height: 69px;
+        }
+        .container .content ul li:hover{
+            background-color: black;
+            color: white;
+        }
+        .container .content ul .logo{
+            padding: 0;
+            height: 100%;
+            width: 160px;
+            margin-right: 5px;
+            background: url(./img/topbar.png);
+        }
+        .container .content ul .logo:hover{
+            background: url(./img/topbar.png);
+        }
+        .container .content .login-box{
+            float: right;
+        }
+        .container .content .login-box div{
+            color: #ccc;
+            float: left;
+            font-size: 12px;
+        }
+        .container .content .login-box .author{
+            width: 90px;
+            height: 32px;
+            border-radius: 20px;
+            line-height: 32px;
+            text-align: center;
+            margin-top: 18px;
+            margin-right: 15px;
+            box-shadow: 0 0 0 1px #ccc;
+        }
+        .container .content .login-box .author:hover{
+            color: white;
+            box-shadow:  0 0 0 1px white;
+        }
+        .container .content .login-box .login{
+            line-height: 69px;
+        }
+        .container .content .login-box .login:hover{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 主体区域容器 -->
+        <div class="content">
+            <!-- nav导航菜单 -->
+            <ul class="nav-box">
+                <li class="logo"></li>
+                <li ><a href="">发现音乐</a></li>
+                <li><a href="">我的音乐</a></li>
+                <li><a href="">朋友</a></li>
+                <li><a href="">商城</a></li>
+                <li><a href="">音乐人</a></li>
+                <li><a href="">下载客户端</a></li>
+            </ul>
+            <!-- 登录信息区域 -->
+            <div class="login-box">
+                <div class="author">
+                    <a href="">
+                        创作者中心
+                    </a>
+                </div>
+                <div class="login">
+                    <a href="">登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

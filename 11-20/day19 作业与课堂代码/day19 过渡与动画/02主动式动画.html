@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词信息"> 
+    <meta name="description" content="描述信息"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>路遥</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box {
+            width: 1000px;
+            height: 1000px;
+            overflow: hidden;
+            background: rgb(184, 184, 184);
+        }
+        .box div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            left: 0;
+            position: relative;
+            margin: 40px 0;
+            /* 添加动画 */
+            animation-name: move;
+            /* 添加动画的时间 */
+            animation-duration: 4s;
+            /*动画播放次数 infinite 无限循环 */
+            animation-iteration-count: 6;
+            /* 动画的播放方向
+            alternate 到最后一帧的时候反方向播放
+            reverse 第一帧从最后一帧位置开始 */
+            animation-direction: alternate;
+        }
+        .sun1{
+            /* 添加动画的速度 */
+            animation-timing-function: ease-in;
+            /* 动画结束后的位置
+            forwards 保留最后一帧
+            backwards 回到第一帧 */
+            animation-fill-mode: forwards;
+        }
+        .sun2{
+            /* 添加动画的速度 */
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: backwards;
+        }
+        .sun3{
+            animation-timing-function: ease-out;
+        }
+        .sun4{
+            animation-timing-function:cubic-bezier(.06,1.17,.51,1.49) ;
+            /* 播放状态 
+            默认 runing 
+            paused 停止动画*/
+            animation-play-state: running;
+        }
+        .sun3:hover{
+            animation-play-state: paused;
+        }
+        /* 手动规定每一帧的动画 */
+        @keyframes move{
+            0%{
+                left: 0px;
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+                left: 900px;
+            }
+        }
+        @keyframes move2{
+            0%{
+                left: 0px;
+            }
+            50%{
+                left: 1000px;
+            }
+            100%{
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="sun1"></div>
+        <div class="sun2"></div>
+        <div class="sun3"></div>
+        <div class="sun4"></div>
+        <div class="sun5"></div>
+    </div>
+</body>
+</html>

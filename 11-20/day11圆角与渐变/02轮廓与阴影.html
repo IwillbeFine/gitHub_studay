@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}li{list-style: none;}
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 0px auto;
+        }
+        .box1{
+            box-sizing: border-box;
+            margin-top: 20px;
+            background: skyblue;
+            /* 元素轮廓： 书写方式和border一模一样，特点是不会占据元素的大小 */
+            /* outline: 1px dashed red; */
+            /* box-shadow 设置盒子阴影
+            书写格式：x y 模糊半径 阴影大小 color
+            阴影扩散位置 outset (向外扩散) inset (向内扩散)
+             */
+            /* box-shadow: 0px 0px 10px 10px  black inset; */
+            box-shadow:  0 0 0 1px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        123
+    </div>
+    <p>123</p>
+
+</body>
+</html>
